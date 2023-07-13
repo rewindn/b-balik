@@ -1,6 +1,6 @@
 :root {
   --primary: #5eea34;
-  --bg: rgb(40, 121, 128);
+  --bg: rgb(7, 103, 112);
 }
 
 * {
@@ -110,7 +110,7 @@ body {
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgba(40, 121, 128) 3%,
+    rgba(7, 103, 112) 3%,
     rgba(225, 255, 255, 0) 50%
   );
 }

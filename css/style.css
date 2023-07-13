@@ -1,6 +1,6 @@
 :root {
-  --primary: #b6895b;
-  --bg: #010101;
+  --primary: #5eea34;
+  --bg: rgb(40, 121, 128);
 }
 
 * {
@@ -92,11 +92,13 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/lase.jpg");
+  background-image: url("../img/lik.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing::after {
@@ -108,19 +110,20 @@ body {
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgba(1, 1, 3, 1) 3%,
+    rgba(40, 121, 128) 3%,
     rgba(225, 255, 255, 0) 50%
   );
 }
 
 .landing .content {
-  padding: 1.4rem 7%;
+  text-align: center;
+  padding: 2.4rem 7%;
   /* background-color: #715539; */
   max-width: 49rem;
 }
 
 .landing .content h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
   line-height: 5.5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 2);
@@ -171,28 +174,34 @@ body {
   color: var(--primary);
 }
 
-.about .row {
+.about .row,
+.contact .row {
   display: flex;
 }
 
-.about .row .about-img {
+.about .row .about-img,
+.contact .row .about-img {
   flex: 1 1 40rem;
 }
 
-.about .row .about-img img {
+.about .row .about-img img,
+.contact .row .about-img img {
   width: 100%;
 }
 
-.about .row .content {
+.about .row .content,
+.contact .row .content {
   flex: 1 1 35rem;
   padding: 0 1rem;
 }
 
-.about .row .content h3 {
+.about .row .content h3,
+.contact .row .content h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.about .row .content p {
+.about .row .content p,
+.contact .row .content p {
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.6;
@@ -222,12 +231,20 @@ body {
 }
 
 .menu .row .menu-card {
+  background-size: cover;
+  background-position: center;
+  position: relative;
   text-align: center;
   padding-bottom: 3.5rem;
+  margin: 2rem;
+  background-color: rgb(3, 10, 26);
+  border-radius: 20%;
+  max-width: 20rem;
 }
 
 .menu .row .menu-card img {
-  border-radius: 50%;
+  margin-top: 2rem;
+  border-radius: 20%;
   width: 80%;
 }
 
@@ -242,19 +259,19 @@ body {
   background-color: #222;
 }
 
-.contact .row .map {
+.contact .row .content {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
 }
 
-.contact .row form {
+.contact .row p {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
 }
 
-.contact .row form .input-grup {
+.contact .row p {
   display: flex;
   align-items: center;
   margin-top: 2rem;
